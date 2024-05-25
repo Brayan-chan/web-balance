@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    background: rgb(57, 188, 188);
+    width: 70%;
+    margin: 13px 130px;
+    padding: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.misDatos {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-perfil img{
+    display: block;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -70px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+label {
+    font-weight: bold;
+}
+
+#nombre, #correo, #entidad {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: black;
+    padding: 3px;
+}
+
+#nombre {
+    width: 36.5%;
+}
+
+#entidad {
+    width: 36.7%;
+}
+
+#correo {
+    width: 37.5%;
+}
+
+.misArchivos {
+    display: flex;
+    margin-top: 40px;
+    padding: 100px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.misArchivos a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: flex;
+}
+
+.icono {
+    width: 110px;
+}
+
+.buscar {
+    margin-left: auto;
+}
+
+.text-icon {
+    position: absolute;
+    margin-left: 16px;
+}

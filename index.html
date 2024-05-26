@@ -17,18 +17,66 @@
 <!-- Dentro del mismo formulario debe de tener los botones, uno de submit y otro para ir a la vista de login -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>BC Corp</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="assets/imagenes/favicon.png" type="image/png">
 </head>
 <body>
-    <h1>Iniciar Sesión</h1>
-    <button onclick="location.href='../pages/register.html'">Registrarse</button>
+    <header>
+        <div class="logo">
+            <img src="assets/imagenes/logo.png" alt="BC Corp Logo">
+            <h3>BC Corp</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Soluciones</a></li>
+                <li><a href="#">Aprende más</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <li><a href="login.html" class="button">Iniciar Sesión</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="favicon">
+            <img src="assets/imagenes/favicon.png" alt="favicon">
+                <h1>ContaSimplicity</h1>
+            </div>
+            <br></br>
+            <h2>Sistema de Contabilidad</h2>
+            <p>Controla la contabilidad y las operaciones fiscales de tu negocio con nuestro software contable ContaSimplicity. 
+                Elabora pólizas dinámicas, descarga comprobantes desde el SAT y desglosa impuestos de tus movimientos. 
+                Cumple con las disposiciones fiscales y obtén declaraciones y estados financieros en automático. 
+                ContaSimplicit es el programa de contabilidad más completo del mercado.</p>
+        </section>
+        <section class="seccion">
+            <form>
+                <h2>¡Para iniciar, regístrate!</h2>
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" name="celular">
+                <label for="tipo">¿Quién eres?</label>
+                <select id="tipo" name="tipo">
+                    <option value="empresario">Empresario</option>
+                    <option value="contador">Contador</option>
+                    <option value="estudiante">Estudiante</option>
+                </select>
+                <div class="recaptcha">
+                    <input type="checkbox" id="recaptcha" name="recaptcha">
+                    <label for="recaptcha">No soy un robot</label>
+                </div>
+                <button type="submit">Aceptar</button>
+            </form>
+        </section>
+    </main>
 </body>
-
-<!-- archivo de scripts del formulario -->
-<script src="js/login.js"></script>
-
 </html>

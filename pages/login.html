@@ -1,0 +1,63 @@
+<!-- Sigan la documentación para no confundirse -->
+
+<!-- Agregar la estrutura del doctype -->
+
+<!-- Modificar el nombre del title -->
+
+<!-- utilicen z-index en los estilos para poder manipular la posición de la imagen -->
+
+<!-- Dentro de la imagen debe haber un input desabilitado para mostrar el nombre de la empresa -->
+
+<!-- Agregar aqui la división del logo y el nombre de de la empresa -->
+
+<!-- Agregar aquí la división del formulario del login --> 
+
+<!-- El formulario debe de tener dos labels y dos inputs -->
+
+<!-- Dentro del mismo formulario debe de tener los botones, uno de submit y otro para ir a la vista de login -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Corp</title>
+    <link rel="stylesheet" href="stylessesion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/imagenes/logo.png" alt="BC Corp">
+            <span class="company-name">BC Corp</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Conócenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-panel">
+            <div class="left-section">
+                <h1>Inicia hoy mismo con la contabilidad</h1>
+                <div class="image-container">
+                    <img src="assets/imagenes/Contador.jpg" alt="Contabilidad">
+                </div>
+            </div>
+            <div class="login">
+                <h2>Iniciar Sesión</h2>
+                <p class="subheader">Ingresa tus datos</p>
+                <form>
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Iniciar</button>
+                    <p>¿Eres nuevo? <a href="index.html">Regístrate</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

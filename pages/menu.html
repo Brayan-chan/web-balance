@@ -15,19 +15,40 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Conócenos</a></li>
+                <li><a href="../pages/login.html">Salir</a></li>
             </ul>
         </nav>
     </header>
     <div class="tuEmpresa">
-        <img src="../assets/imagenes/logo.png" alt="tuEmpresa" class="tuLogo">
-        <h3>Tu empresa</h3>
-        <input type="text" id="empresa" name="empresa" disabled>
+       
     </div>
     <div class="contenedor">
         <div class="tuInfo">
             <h3>Completa los datos de tu empresa</h3>
+
+            <form id="tusDatos">
+                <input type="hidden" id="id" name="id">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" disabled>
+
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" name="celular" disabled>
+
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" disabled>
+
+                <label for="tuEmpresa">Tu empresa</label>
+                <input type="text" id="tuEmpresa" name="tuEmpresa" placeholder="Ingresa el nombre de tu empresa" required>
+
+                <button type="submit" id="guardar">Guardar</button>
+                <div class="image">
+                    <img src="../assets/imagenes/Contador.jpg" alt="contador" id="image">
+                </div>
+            </form>
         </div>
     </div>
 </body>
+
+<script src="../js/menu.js"></script>
+
 </html>

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('../assets/imagenes/city.png') no-repeat right top;
-    background-size: 460px;
+    background-size: 471px;
 }
 
 header {
@@ -176,7 +176,6 @@ p {
 .tuEmpresa {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
     margin-left: 1100px;
 }
 
@@ -202,4 +201,40 @@ p {
 .contenedor {
     display: flex;
     color: black;
+    border: 2px solid black;
+    max-width: 800px;
+    max-height: 500px;
+    margin-left: 83px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.tuInfo {
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 305px;
+}
+
+#image {
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    margin-left: 390px;
+    position: relative;
+    bottom: 300px;
+}
+
+#guardar {
+    max-width: 100px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#guardar:hover {
+    background-color: darkblue;
+    transition: 500ms;
 }

@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/imagenes/city.png') no-repeat right top;
+    background-size: 471px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(248, 248, 248, 0.9);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.favicon {
+    display: flex;
+    align-items: center;
+}
+.favicon img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 1px;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 150px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h1 {
+    color: #00aaff;
+}
+
+.content h2 {
+    margin-top: -20px;
+    color: black;
+}
+
+.seccion {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.recaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    }
+
+.recaptcha input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.recaptcha label {
+    margin: 0;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00aaff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: darkblue;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.tuEmpresa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1100px;
+}
+
+.tuEmpresa img {
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.tuEmpresa h3 {
+    margin-left: 60px;
+}
+
+#empresa {
+    margin-right: 120px;
+    border-radius: 20px;
+    border: 2px solid #B0BEC5;
+    padding: 5px;
+    font-size: 14px;   
+    margin-left: 10px;
+}
+
+.contenedor {
+    display: flex;
+    color: black;
+    border: 2px solid black;
+    max-width: 800px;
+    max-height: 550px;
+    margin-left: 83px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.tuInfo {
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 305px;
+}
+
+#image {
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    margin-left: 390px;
+    position: relative;
+    bottom: 330px;
+}
+
+#guardar {
+    max-width: 100px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#guardar:hover {
+    background-color: darkblue;
+    transition: 500ms;
+}
+
+section img {
+    position: relative;
+    display: block;
+    width: 150px;
+    margin: 0 1142px;
+    bottom: 400px;
+}
+
+section input {
+    position: relative;
+    display: block;
+    margin: 0 1120px;
+    bottom: 350px;
+    max-width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #B0BEC5;
+    font-size: 14px;
+}
+
+section button {
+    position: relative;
+    display: block;
+    margin: 0 1190px;
+    bottom: 320px;
+    max-width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #00aaff;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: darkblue;
+}

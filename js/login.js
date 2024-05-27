@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Mostrar alerta de éxito
             alert('Inicio de sesión exitoso');
-            window.location.href = '../pages/menu.html';
+            window.location.href = '../pages/tusDatos.html';
         } else {
             // Mostrar alerta de error
             alert('Credenciales incorrectas');

@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const password = document.getElementById('password').value;
 
+        const tipo = document.getElementById('tipo').value;
+
         const recaptcha = document.getElementById('recaptcha');
 
         //validar el formulario
@@ -42,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 nombre: nombre,
                 email: email,
                 celular: celular,
-                password: password
+                password: password,
+                tipo: tipo
             };
 
             //Agregar el nuevo usuario a la lista de usuarios

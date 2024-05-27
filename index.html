@@ -1,21 +1,3 @@
-<!-- Sigan la documentación para no confundirse -->
-
-<!-- Agregar la estrutura del doctype -->
-
-<!-- Modificar el nombre del title -->
-
-<!-- utilicen z-index en los estilos para poder manipular la posición de la imagen -->
-
-<!-- Agregar aqui la división del logo y el nombre de de la empresa -->
-
-<!-- Agregar aquí la división del formulario del register --> 
-
-<!-- El formulario debe de tener cuatro labels y cuatro inputs -->
-
-<!-- Agregar el botón y el enlace para adjuntar la foto del perfil del usuario -->
-
-<!-- Dentro del mismo formulario debe de tener los botones, uno de submit y otro para ir a la vista de login -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -60,22 +42,24 @@
             <!--<a href="pages/información.html">Ver más...</a>-->
         </section>
         <section class="seccion">
-            <form>
+            <form id="formulario">
                 <h2>¡Para iniciar, regístrate!</h2>
                 <label for="nombre">Nombre y Apellido</label>
                 <input type="text" id="nombre" name="nombre">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email">
                 <label for="celular">Celular</label>
                 <input type="text" id="celular" name="celular">
-                <label for="tipo">¿Qué eres?</label>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="********">
+                <label for="tipo">Qué eres?</label>
                 <select id="tipo" name="tipo">
                     <option value="empresario">Empresario</option>
                     <option value="contador">Contador</option>
                     <option value="estudiante">Estudiante</option>
                 </select>
                 <div class="recaptcha">
-                    <input type="checkbox" id="recaptcha" name="recaptcha">
+                    <input type="checkbox" id="recaptcha" name="recaptcha" value="on">
                     <label for="recaptcha">No soy un robot</label>
                 </div>
                 <button type="submit">Aceptar</button>
@@ -83,4 +67,7 @@
         </section>
     </main>
 </body>
+
+<script src="js/register.js"></script>
+
 </html>

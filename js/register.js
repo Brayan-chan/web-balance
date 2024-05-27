@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const recaptcha = document.getElementById('recaptcha');
 
+        //validar el formulario
+        if (nombre === '' || email === '' || celular === '' || password === '') {
+            alert('Todos los campos son obligatorios');
+            return;
+        }
+
+        //validar el captcha
         if (recaptcha.checked) {
 
             let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];

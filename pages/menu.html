@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="icon" sizes="32x32" href="../assets/imagenes/jamy.png">
+    <link rel="icon" href="../assets/imagenes/favicon.png" type="image/png"> 
     <link rel="stylesheet" href="../css/menu.css">
 </head>
-
 <body>
-    <div class="contenedor">
-        <div class="misDatos">
-            <div class="grupo-formulario">
-                <label for="nombre" class="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Alex Hernandez">
-            </div>
-            <div class="grupo-formulario">
-                <label for="correo" class="correo">Correo:</label>
-                <input type="mail" id="correo" placeholder="alex43$@gmail.com">
-            </div>
-            <div class="grupo-formulario">
-                <label for="entidad" class="entidad">Entidad:</label>
-                <input type="text" id="entidad" placeholder="JAM CARS">
-            </div>
-            <div class="img-perfil">
-                <img src="../assets/imagenes/alex.webp" alt="">
-            </div>
+    <header>
+        <div class="logo">
+            <img src="../assets/imagenes/logo.png" alt="BC Corp">
+            <span class="company-name">BC Corp</span>
         </div>
-        <div class="misArchivos">
-            <a href="" class="archivos"><img src="../assets/imagenes/dropbox.svg" class="icono" alt=""><span class="text-icon">Archivos</span></a>
-            <a href="" class="buscar"><img src="../assets/imagenes/samsung.svg" class="icono" alt=""><span class="text-icon">Buscador</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">Conócenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tuEmpresa">
+        <img src="../assets/imagenes/logo.png" alt="tuEmpresa" class="tuLogo">
+        <h3>Tu empresa</h3>
+        <input type="text" id="empresa" name="empresa" disabled>
+    </div>
+    <div class="contenedor">
+        <div class="tuInfo">
+            <h3>Completa los datos de tu empresa</h3>
         </div>
     </div>
 </body>
-
 </html>

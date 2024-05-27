@@ -2,9 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('../assets/imagenes/city.png') no-repeat right top;
     background-size: 460px;
-}
+}  
 
 header {
     display: flex;
@@ -36,6 +35,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .favicon img {
     height: 30px;
     border-radius: 50%;
@@ -115,23 +115,7 @@ form input, form select {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-.recaptcha {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    }
 
-.recaptcha input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.recaptcha label {
-    margin: 0;
-    font-size: 1em;
-}
 
 button[type="submit"] {
     width: 100%;
@@ -170,5 +154,5 @@ button[type="submit"] {
 }
 
 p {
-    font-size: 1.2em;
+font-size: 1.2em;
 }

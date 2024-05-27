@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Registro exitoso');
 
             //Redirigir al usuario a la página del menu
-            window.location.href = 'pages/menu.html';
+            window.location.href = 'pages/login.html';
            
         } else {
             alert('Por favor, verifica que no eres un robot.');

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('../assets/imagenes/city.png') no-repeat right top;
-    background-size: 471px;
+    background-size: 554px;
 }
 
 header {
@@ -243,14 +243,14 @@ section img {
     position: relative;
     display: block;
     width: 150px;
-    margin: 0 1142px;
+    margin: 0 1335px;
     bottom: 400px;
 }
 
 section input {
     position: relative;
     display: block;
-    margin: 0 1120px;
+    margin: 0 1310px;
     bottom: 350px;
     max-width: 200px;
     padding: 5px;
@@ -262,7 +262,7 @@ section input {
 section button {
     position: relative;
     display: block;
-    margin: 0 1190px;
+    margin: 0 1380px;
     bottom: 320px;
     max-width: 100px;
     padding: 5px;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Balance</title>
+    <link rel="stylesheet" href="../css/balances.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/imagenes/logo.png" alt="BC Corp">
+            <span class="company-name">BC Corp</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pages/login.html">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div id="datosIniciales">
+            <h3>Datos del Balance</h3>
+            <form id="datosBalance">
+                <label for="entidad">Nombre de la Entidad:</label>
+                <input type="text" id="entidad">
+                <label for="fechaInicio">Fecha Inicio:</label>
+                <input type="date" id="fechaInicio">
+                <label for="fechaFin">Fecha Fin:</label>
+                <input type="date" id="fechaFin">
+                <label for="autorizadoPor">Autorizado Por:</label>
+                <input type="text" id="autorizadoPor">
+                <label for="elaboradoPor">Elaborado Por:</label>
+                <input type="text" id="elaboradoPor">
+                <button type="button" id="siguiente">Siguiente</button>
+            </form>
+        </div>
+
+        <div id="divisiones" style="display:none;">
+            <div id="activos">
+                <h3>Activos</h3>
+                <label for="numActivos">Número de Activos:</label>
+                <input type="number" id="numActivos" min="1">
+                <button type="button" id="crearActivos">Crear Activos</button>
+                <div id="listaActivos"></div>
+            </div>
+            <div id="pasivos">
+                <h3>Pasivos</h3>
+                <label for="numPasivos">Número de Pasivos:</label>
+                <input type="number" id="numPasivos" min="1">
+                <button type="button" id="crearPasivos">Crear Pasivos</button>
+                <div id="listaPasivos"></div>
+            </div>
+            <div id="resultados">
+                <h3>Resultados</h3>
+                <p>Total Activos: <span id="totalActivos">0</span></p>
+                <p>Total Pasivos: <span id="totalPasivos">0</span></p>
+                <p>Capital Contable: <span id="capitalContable">0</span></p>
+            </div>
+            <button type="button" id="guardarBalance">Guardar Balance</button>
+        </div>
+    </div>
+    
+    <script src="../js/balances.js"></script>
+</body>
+</html>

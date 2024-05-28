@@ -257,9 +257,6 @@ section input {
     border-radius: 10px;
     border: 2px solid #B0BEC5;
     font-size: 14px;
-    background: white;
-    color: black;
-    text-align: center;
 }
 
 section button {
@@ -279,21 +276,4 @@ section button {
 
 section button:hover {
     background-color: darkblue;
-}
-
-@media (min-width: 1200px) {
-    section img {
-        margin: 0 1280px;
-        bottom: 500px;
-    }
-
-    section input {
-        margin: 0 1260px;
-        bottom: 450px;
-    }
-
-    section button {
-        margin: 0 1330px;
-        bottom: 400px;
-    }
 }

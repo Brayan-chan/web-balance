@@ -221,7 +221,7 @@ p {
     border-radius: 20px;
     margin-left: 390px;
     position: relative;
-    bottom: 330px;
+    bottom: 370px;
 }
 
 #guardar {
@@ -276,4 +276,8 @@ section button {
 
 section button:hover {
     background-color: darkblue;
+}
+
+input {
+    font-size: 14px;
 }

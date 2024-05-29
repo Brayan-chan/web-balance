@@ -159,12 +159,8 @@ main {
 .contenedor {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    margin-inline: 130px;
-=======
     margin-inline: 120px;
->>>>>>> 28434ff5a5ac8dbc43eb25eff31bf537dc39b960
-    margin-block: 80px;
+    margin-block: 50px;
     padding: 10px;
     padding-left: 40px;
     border: 2px solid black;

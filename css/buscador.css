@@ -51,82 +51,67 @@ nav ul li a {
 }
 
 .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: calc(50% - 700px);
-    font-size: 30px;
-    border: 2px solid black;
-    padding: 60px;
-    margin-inline: calc(400px);
-    border-radius: 20px;
-}
-
-.buscador {
-    margin: 20px;
-    border: 2px solid black;
-    max-width: 500px;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    border-radius: 10px;
-}
-
-.buscador input {
     padding: 20px;
-    background: transparent;
-    width: 500px;
-    border: none;
-    text-decoration: none;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.p {
+    margin-top: 0;
 }
 
 .center {
     text-align: center;
 }
 
-.p5 {
-    padding: 5px;
-}
-
-.p40 {
-    padding: 40px;
-    font-size: 20px;
-}
-
 .mb10 {
     margin-bottom: 10px;
 }
 
-.acciones {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.buscador {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.acciones  button {
-    border: 2px solid black;
+.buscador input[type="text"] {
     padding: 10px;
-    font-size: 14px;
-    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.editar {
-    background: rgb(113, 248, 113);
+.buscador button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.eliminar {
-    background: rgb(249, 62, 62);
+.buscador button:hover {
+    background-color: #555;
 }
 
-.editar:hover {
-    background:rgb(178, 252, 178);
-    transition: 500ms;
-    transform: scale(0.95);
+.acciones {
+    text-align: center;
 }
 
-.eliminar:hover {
-    background: rgb(251, 145, 145);
-    transition: 500ms;
-    transform: scale(0.95);
+.acciones button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.acciones button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
 }

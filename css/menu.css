@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('assets/imagenes/city.png');
-    background-size: 250px;
+    background: url('../assets/imagenes/city.png');
+    background-size: 200px;
 }
 
 header {
@@ -159,12 +159,17 @@ main {
 .contenedor {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     margin-inline: 130px;
+=======
+    margin-inline: 120px;
+>>>>>>> 28434ff5a5ac8dbc43eb25eff31bf537dc39b960
     margin-block: 80px;
     padding: 10px;
     padding-left: 40px;
     border: 2px solid black;
-    border-radius: 20px;    
+    border-radius: 20px;
+    background-color: white;
 }
 
 .tuInfo input {
@@ -176,7 +181,6 @@ main {
 
 .menu {
     margin-top: 80px;
-    border: 2px solid black;
     padding: 5px;
     border-radius: 10px;
     display: flex;

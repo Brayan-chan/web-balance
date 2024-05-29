@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('assets/imagenes/city.png');
-    background-size: 250px;
+    background: url('../assets/imagenes/city.png') no-repeat right top;
+    background-size: 451px;
 }
 
 header {

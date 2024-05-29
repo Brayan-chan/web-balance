@@ -176,3 +176,7 @@ p {
 input {
     font-size: 14px;
 }
+
+li {
+    list-style: none;
+}

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-size: 460px;
-}  
+}
 
 header {
     display: flex;
@@ -35,7 +35,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 .favicon img {
     height: 30px;
     border-radius: 50%;
@@ -59,7 +58,209 @@ nav ul li a {
     font-weight: bold;
 }
 
+.login button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00aaff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: darkblue;
+}
+
+/*p {
+    font-size: 1.2em;
+}
+
 .contact-info{
     float: right;
     margin-right: 150px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.principal-heading {
+    margin-left: 30px;
+}
+
+.redes_sociales {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+ul li{
+    list-style: none;
+    margin: 10px;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+article {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 65%;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+article h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #2980b9;
+}
+
+aside.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    flex-grow: 1;
+}
+
+aside.contact-info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #004080;
+}
+
+.redes_sociales {
+    list-style: none;
+    padding-left: 0;
+}
+
+.redes_sociales li  {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.redes_sociales li img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+.redes_sociales li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.redes_sociales img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icono_x{
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    color: #444;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:active {
+    color: #333;
 }

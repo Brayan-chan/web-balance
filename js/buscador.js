@@ -1,103 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buscarButton = document.getElementById('buscar');
-    const editarButton = document.querySelector('.editar');
-    const eliminarButton = document.querySelector('.eliminar');
-    const guardarCambiosButton = document.querySelector('.guardar-cambios');
-
     const buscadorInput = document.getElementById('buscador');
-    const contenedorResultados = document.querySelector('.contenedor');
+    const contenedorResultados = document.querySelector('.resultados');
+    const abrirBalanceButton = document.getElementById('abrirBalance');
 
-    let archivosEncontrados = []; // Variable para almacenar los archivos encontrados
+    let balances = JSON.parse(sessionStorage.getItem('balances')) || [];
+    let balanceSeleccionado = null;
 
-    buscarButton.addEventListener('click', buscarArchivos);
-    editarButton.addEventListener('click', habilitarEdicion);
-    eliminarButton.addEventListener('click', eliminarArchivo);
-    guardarCambiosButton.addEventListener('click', guardarCambios);
+    buscadorInput.addEventListener('input', buscarBalances);
+    abrirBalanceButton.addEventListener('click', abrirBalance);
 
-    document.addEventListener('DOMContentLoaded', function() {
-    const buscarButton = document.getElementById('buscar');
-    const editarButton = document.querySelector('.editar');
-    const eliminarButton = document.querySelector('.eliminar');
-    const guardarCambiosButton = document.querySelector('.guardar-cambios');
-
-    const buscadorInput = document.getElementById('buscador');
-    const contenedorResultados = document.querySelector('.contenedor');
-
-    let archivosEncontrados = []; // Variable para almacenar los archivos encontrados
-
-    buscarButton.addEventListener('click', buscarArchivos);
-    editarButton.addEventListener('click', habilitarEdicion);
-    eliminarButton.addEventListener('click', eliminarArchivo);
-    guardarCambiosButton.addEventListener('click', guardarCambios);
-
-    function buscarArchivos() {
+    function buscarBalances() {
         const busqueda = buscadorInput.value.toLowerCase();
-        const resultados = archivosEncontrados.filter(archivo => archivo.toLowerCase().includes(busqueda));
-        mostrarResultadosDeBusqueda(resultados);
-    }    
-
-    function mostrarResultadosDeBusqueda(resultados) {
-        const contenedorResultados = document.querySelector('.contenedor');
         contenedorResultados.innerHTML = '';
-    
-        resultados.forEach(resultado => {
+
+        const resultados = balances.filter(balance => balance.entidad.toLowerCase().includes(busqueda));
+
+        resultados.forEach((resultado, index) => {
             const elementoResultado = document.createElement('div');
-            elementoResultado.textContent = resultado;
+            elementoResultado.textContent = resultado.entidad;
+            elementoResultado.dataset.index = index;
+            elementoResultado.addEventListener('click', () => {
+                balanceSeleccionado = resultado;
+                abrirBalanceButton.style.display = 'block';
+            });
             contenedorResultados.appendChild(elementoResultado);
         });
     }
-    
 
-    function cargarArchivo(archivo) {
-        // Crear una nueva instancia de XMLHttpRequest
-        let xhr = new XMLHttpRequest();
-    
-        // Establecer la función de devolución de llamada cuando la solicitud esté lista
-        xhr.onreadystatechange = function() {
-            // Verificar si la solicitud se ha completado y la respuesta está lista
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                // Verificar si la solicitud se completó correctamente
-                if (xhr.status === 200) {
-                    // Obtener el contenido del archivo
-                    let contenido = xhr.responseText;
-                    
-                    // Llamar a la función para mostrar el contenido del archivo
-                    mostrarContenido(contenido);
-                } else {
-                    // Manejar el error si la solicitud no se completó correctamente
-                    console.error('Error al cargar el archivo:', xhr.statusText);
-                }
-            }
-        };
-    
-        // Abrir una nueva solicitud GET para el archivo especificado
-        xhr.open('GET', archivo, true);
-    
-        // Enviar la solicitud
-        xhr.send();
+    function abrirBalance() {
+        if (balanceSeleccionado) {
+            // Redirigir a la página del balance o cargar los datos en la misma página
+            sessionStorage.setItem('balanceSeleccionado', JSON.stringify(balanceSeleccionado));
+            window.location.href = '../pages/editor.html';
+        }
     }
-    
-    // Función para mostrar el contenido del archivo en la página
-    function mostrarContenido(contenido) {
-        // Insertar el contenido del archivo en un elemento de la página
-        let contenedor = document.getElementById('contenedor-archivo');
-        contenedor.innerHTML = contenido;
-    }
-    
-
-    function habilitarEdicion() {
-        // Lógica para habilitar la edición de campos
-    }
-
-    function eliminarArchivo() {
-        // Lógica para eliminar el archivo seleccionado
-    }
-
-    function guardarCambios() {
-        // Lógica para guardar los cambios realizados en el archivo
-    }
-
-    // Otras funciones y lógicas necesarias
-
-    });
 });

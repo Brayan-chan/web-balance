@@ -159,7 +159,7 @@ main {
 .contenedor {
     display: flex;
     flex-direction: column;
-    margin-inline: 220px;
+    margin-inline: 130px;
     margin-block: 80px;
     padding: 10px;
     padding-left: 40px;

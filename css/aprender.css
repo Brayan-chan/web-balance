@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 460px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(248, 248, 248, 0.9);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.favicon {
+    display: flex;
+    align-items: center;
+}
+.favicon img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 1px;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 150px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00aaff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: darkblue;
+}
+ul li.crear_balance {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+b {
+    color: #1a252f;
+    font-weight: 700;
+}
+
+img.pasos_a_seguir {
+    width: 75%;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+}
+
+body, h1, h2, h3, p, ol, li, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #2c3e50;
+    background-color: #fdfdfd;
+    line-height: 1.8;
+    margin: auto;
+    padding: 20px; /* Añade un poco de espacio alrededor del cuerpo de la página */
+}
+
+h1, h2, h3 {
+    color: #333; /* Cambia el color de los encabezados a un gris oscuro */
+    margin-bottom: 20px; /* Añade un poco de espacio debajo de los encabezados */
+}
+li {
+    margin-bottom: 10px; /* Añade un  de espacio debajo de cada elemento de la lista */
+    
+}

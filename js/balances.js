@@ -188,4 +188,21 @@ document.addEventListener('DOMContentLoaded', function() {
         a.click();
         URL.revokeObjectURL(url);
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const guardarComoButton = document.getElementById('guardarComo');
+    
+        guardarComoButton.addEventListener('click', function() {
+            const balanceHTML = document.body; // Aquí puedes seleccionar el elemento que quieres convertir a PDF
+    
+            html2canvas(balanceHTML).then(function(canvas) {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF();
+                pdf.addImage(imgData, 'PNG', 0, 0);
+                pdf.save("balance.pdf");
+            });
+        });
+    });
 });
+
+

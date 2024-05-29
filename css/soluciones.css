@@ -264,3 +264,6 @@ a:visited {
 a:active {
     color: #333;
 }
+li {
+    list-style: none;
+}

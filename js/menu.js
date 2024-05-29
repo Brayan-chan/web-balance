@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (usuarioActual) {
         tusDatos.querySelector('#nombre').value = usuarioActual.nombre;
-        tusDatos.querySelector('#email').value = usuarioActual.nombre;
+        tusDatos.querySelector('#email').value = usuarioActual.email;
         tusDatos.querySelector('#tipo').value = usuarioActual.tipo;
         tusDatos.querySelector('#tuEmpresa').value = sessionStorage.getItem('tuEmpresa');
     }

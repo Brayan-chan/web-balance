@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../pages/login.html">Salir</a></li>
+                <li><a href="../pages/menu.html">Regresar</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contenedor">
+    <h1 class="p p40 center mb10">Buscar Balances</h1>
+    <div class="search-box">
+        <input type="text" id="buscador" placeholder="Nombre de la Entidad">
+    </div>
+    <div class="resultados">
         <!-- Aquí se mostrarán los resultados de búsqueda -->
     </div>
-    <h4 class="p p40 center mb10">¿Qué deseas buscar hoy?</h4>
-    <div class="buscador">
-        <input type="text" name="buscador" id="buscador" placeholder="Buscar archivo...">
-    </div>
-    <div class="acciones">
-        <button class="editar">✍🏻 Editar</button>
-        <button class="eliminar">🗑️ Eliminar</button>
-    </div>
+    <button type="button" id="abrirBalance" style="display:none;">Abrir Balance</button>
+    <script src="../js/buscador.js"></script>
 </body>
 </html>

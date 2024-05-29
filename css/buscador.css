@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/imagenes/city.png');
+    background-size: 250px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo .company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(50% - 700px);
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 60px;
+    margin-inline: calc(400px);
+    border-radius: 20px;
+}
+
+.buscador {
+    margin: 20px;
+    border: 2px solid black;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.buscador input {
+    padding: 20px;
+    background: transparent;
+    width: 500px;
+    border: none;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.p40 {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.acciones {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.acciones  button {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.editar {
+    background: rgb(113, 248, 113);
+}
+
+.eliminar {
+    background: rgb(249, 62, 62);
+}
+
+.editar:hover {
+    background:rgb(178, 252, 178);
+    transition: 500ms;
+    transform: scale(0.95);
+}
+
+.eliminar:hover {
+    background: rgb(251, 145, 145);
+    transition: 500ms;
+    transform: scale(0.95);
+}

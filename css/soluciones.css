@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-size: 460px;
     background: url('../assets/imagenes/city.png');
+    background-size: 160px;
 }
 
 header {

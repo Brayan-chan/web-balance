@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('../assets/imagenes/city.png') no-repeat right top;
-    background-size: 460px;
+    background-size: 480px;
 }
 
 header {
@@ -73,6 +73,7 @@ main {
     justify-content: space-around;
     padding: 50px 20px;
     background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
     border-radius: 10px;
     margin: 20px;
 }
@@ -94,12 +95,13 @@ main {
     width: 30%;
     border: 1px solid #ddd;
     padding: 20px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 form h2 {
-    margin-top: 0;
+    margin-top: 5;
+    text-align: center;
 }
 
 form label {
@@ -108,10 +110,10 @@ form label {
 }
 
 form input, form select {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
